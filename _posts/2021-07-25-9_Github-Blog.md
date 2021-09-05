@@ -89,7 +89,7 @@ $ git remote remove origin
 
 4. git 설치
 
-5. Ruby 와 Jekill설치
+5. Ruby설치
 
 6. Markdown 지원에디터 설치
 
@@ -100,7 +100,7 @@ $ git remote remove origin
     - 저는 작성한 Markdown이 바로 보여지고 상대적으로 프로그램이 간결한거같아 Typora를 선택했습니다.
   - prose.io
 
-5.  테마 fork하기
+5.  ~~테마 fork하기~~ -> fork를 한 xxxx.github.io에는 잔디가 안생기므로 새 repository를 생성하여 테마를 push해줘야합니다
 6.  취향에 맞게 style변경
 
 <br>
@@ -114,6 +114,7 @@ $ git remote remove origin
 - 포스팅본문의 page__inner-wrap의  width 늘리기
 - Tags목록 정리
 - 글씨체 변경
+- 포스팅 Title밑에 update time 표시하기
 
 
 
@@ -128,6 +129,8 @@ $ git remote remove origin
 [https://ansohxxn.github.io/blog/category/](https://ansohxxn.github.io/blog/category/)
 
 ---
+
+
 
 ### "back to top" Icon 추가
 
@@ -146,8 +149,7 @@ _includes/archive-single.html 를 보면 각각 포스팅 제목, read_time 또�
 
 - 포스팅 제목에 해당 하는 부분입니다.
 
-  ```
-  
+  ```ruby
   <h2 class="archive__item-title no_toc" itemprop="headline">
   {% if post.link %}
   <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -156,22 +158,37 @@ _includes/archive-single.html 를 보면 각각 포스팅 제목, read_time 또�
   {% endif %}
   </h2>
   ```
-
+  
+  
+  
 - read_time(읽는데 걸리는 예상시간)이 표시되는 부분입니다.
 
-  ```
-  {% include page__meta.html type=include.type %}
-  ```
+```html
+
+{% include page__meta.html type=include.type %}
+
+```
+
+  
 
 - 포스팅 설명이 들어가는 부분입니다.
 
+  ```html
+  
+  {/% if post.excerpt %}
+  <p class="archive__item-excerpt" itemprop="description">
+  {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
+  </p>
+  {% endif %}
+  
   ```
-  {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
-  ```
+
+
+
 
 page_meta.html에서 read_time(읽는데 걸리는 예상시간)을 설정해주고 있는듯 하니 _includes/page_meta.html을 다시 찾아가 봅니다.
 
-- read_time과 show_date 표시에 대한 조건이 있는데 read_time표시를 아예 안하고 싶어서 모두 주석처리하고 다음 소스를 추가해 주었습니다.  소스 보러가기 👉 [_includes/page__meta.html](https://github.com/2SEHI/2SEHI.github.io/blob/1cb6dff965a5728b9e199cc549cc29983c813876/_includes/page__meta.html)
+- read_time과 show_date 표시에 대한 조건이 있는데 read_time표시를 아예 안하고 싶어서 모두 주석처리하고 다음 소스를 추가해 주었습니다.  소스 보러가기 👉 [_includes/page__meta.html](https://github.com/2SEHI/2SEHI2.github.io/blob/1cb6dff965a5728b9e199cc549cc29983c813876/_includes/page__meta.html)
 
   ```html
   {% if document.date %}
@@ -183,14 +200,4 @@ page_meta.html에서 read_time(읽는데 걸리는 예상시간)을 설정해주
 
 - _posts폴더를 Category에 맞게 정리하기
 - [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes)의 구조에 대해 정리하기
-
-
-
-## Category 목록 - 생각 중
-
-- Coding Test(Python)
-- Machine Learning
-- Deep Learning
-- 정보처리기사 실기
-- K-digital Training
 
