@@ -1,5 +1,5 @@
 ---
-title:  "[Programming_Test]LinkedList를 이용한 패린드롬 확인"
+title:  "[Programming_Test] LinkedList를 이용한 패린드롬 확인"
 
 date: 2021-09-06
 last_modified_at: 2021-09-06
@@ -10,6 +10,8 @@ comments: true
 categories:
   - Programming Test
 ---
+
+
 
 ## LinkedList 생성
 

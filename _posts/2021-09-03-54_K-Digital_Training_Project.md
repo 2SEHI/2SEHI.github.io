@@ -23,7 +23,20 @@ categories:
 
 
 
-위의 샘플 이미지를 이용하여 진행해본 전처리작업은 GaussainBlur, AdapTreshold, dilate, threshold입니다.
+
+
+
+
+
+
+### 주요 객체를 추출하기 위해 해본것
+
+위의 샘플 이미지를 이용하여 주요 객체를 추출을 시도해보았습니다. 사용해본 함수는 GaussainBlur, AdapTreshold, dilate, threshold입니다.
+
+1. 주요 객체와 배경 영역 구분
+   1. dilate를 이용하여 객체내의 불필요한 내용을 침식시킴
+   2. cv2.threshold 를 이용하여 주요객체와 배경영역을 구별함
+2. 주요 객체 추출
 
 
 
@@ -33,30 +46,7 @@ categories:
 
 
 
+### AdaptThreshold 
 
-
-## GaussainBlur
-
-
-
-## AdapTreshold
-
-
-
-## dilate
-
-
-
-## threshold
-
-
-
-
-​	adaptThreshold - 문자열 추출할 때 쓰면 좋을 것 같음
-
-1. 주요 객체와 배경 영역 구분
-   1. dilate를 이용하여 객체내의 불필요한 내용을 침식시킴
-   2. cv2.threshold 를 이용하여 주요객체와 배경영역을 구별함
-2. 주요 객체 추출
-3. 
+AdaptThreshold 는 8세그먼트부분이 유독 어두워서 문자열 추출할 때 쓰면 좋을 것 같습니다
 
