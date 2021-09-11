@@ -32,7 +32,7 @@ categories:
 
 
 
-![image-20210911165807686](C:\Users\admin\Documents\GitHub\2SEHI.github.io\assets\images\61_Programming_Test.jpg)
+![image-20210911165807686](\assets\images\61_Programming_Test.jpg)
 
 
 
