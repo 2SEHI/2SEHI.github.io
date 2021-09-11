@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
 ### 값을 설정한 후의 LinkedList 구조
 
-![57_K-Digital_Training_Project_1](\assets\images\57_K-Digital_Training_Project_1.png)
+![57_K-Digital_Training_Project_1](\assets\images\57_Programming_Test_1.png)
 
 
 
@@ -75,7 +75,7 @@ def is_palindrome(head: ListNode) -> bool:
     slow = fast = head
 ```
 
-![57_K-Digital_Training_Project_2](\assets\images\57_K-Digital_Training_Project_2.png)
+![57_K-Digital_Training_Project_2](\assets\images\57_Programming_Test_2.png)
 
 
 
@@ -116,7 +116,7 @@ while fast and fast.next:
         slow = slow.next
 ```
 
-![image-20210906014717860](\assets\images\57_K-Digital_Training_Project_6.png)
+![image-20210906014717860](\assets\images\57_Programming_Test_6.png)
 
 
 
@@ -130,19 +130,19 @@ while fast and fast.next:
 
 ### 1번째
 
-![image-20210906014815237](\assets\images\57_K-Digital_Training_Project_7.png)
+![image-20210906014815237](\assets\images\57_Programming_Test_7.png)
 
 
 
 ### 2번째
 
-![image-20210906014931673](\assets\images\57_K-Digital_Training_Project_8.png)
+![image-20210906014931673](\assets\images\57_Programming_Test_8.png)
 
 
 
 ### 3번째
 
-![image-20210906014950355](\assets\images\57_K-Digital_Training_Project_9.png)
+![image-20210906014950355](\assets\images\57_Programming_Test_9.png)
 
 
 
