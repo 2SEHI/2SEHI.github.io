@@ -63,7 +63,7 @@ Global Threshold는이미지 전체에 임계가 적용되어 버려지는 영�
 - Global Threshold
   - 이미지 전체에 임계가 적용돼 다음 예의 Global 이미지에서처럼 버려지는 영역이 많아지므로 Adaptive Threshold를 적용해야함
 
-![60_K-Digital_Training_Project_1adaptiveThreshold](C:\Users\admin\Documents\GitHub\2SEHI.github.io\assets\images\60_K-Digital_Training_Project_1adaptiveThreshold.jpg)
+![60_K-Digital_Training_Project_1adaptiveThreshold](\assets\images\60_K-Digital_Training_Project_1adaptiveThreshold.jpg)
 
 ### 영역제외
 
@@ -77,7 +77,7 @@ Global Threshold는이미지 전체에 임계가 적용되어 버려지는 영�
 
 - dilate 와 erode
 
-<img src="C:\Users\admin\Documents\GitHub\2SEHI.github.io\assets\images\60_K-Digital_Training_Project_2dilate_erode.png" alt="60_K-Digital_Training_Project_2dilate_erode" style="zoom:67%;" />
+<img src="\assets\images\60_K-Digital_Training_Project_2dilate_erode.png" alt="60_K-Digital_Training_Project_2dilate_erode" style="zoom:67%;" />
 
 
 
@@ -87,7 +87,7 @@ Global Threshold는이미지 전체에 임계가 적용되어 버려지는 영�
 
 - 끊어진 점이 있는 선을 제거
 - Morph Close를 적용하지 않으면 글자가 한덩이가 아니라 여러개로 쪼개질 것임
-  ![60_K-Digital_Training_Project_4close](C:\Users\admin\Documents\GitHub\2SEHI.github.io\assets\images\60_K-Digital_Training_Project_4close.jpg)
+  ![60_K-Digital_Training_Project_4close](\assets\images\60_K-Digital_Training_Project_4close.jpg)
 
 
 
@@ -95,18 +95,18 @@ Global Threshold는이미지 전체에 임계가 적용되어 버려지는 영�
 
 불필요한 세로선을 제거
 
-![60_K-Digital_Training_Project_5HoughLinesP](C:\Users\admin\Documents\GitHub\2SEHI.github.io\assets\images\60_K-Digital_Training_Project_5HoughLinesP.jpg)
+![60_K-Digital_Training_Project_5HoughLinesP](\assets\images\60_K-Digital_Training_Project_5HoughLinesP.jpg)
 
 ### contouring - findContours메소드
 
 - CHAIN_APPROX_SIMPLE 설정의 경우
 
-![60_K-Digital_Training_Project_6contour](C:\Users\admin\Documents\GitHub\2SEHI.github.io\assets\images\60_K-Digital_Training_Project_6contour.jpg)
+![60_K-Digital_Training_Project_6contour](\assets\images\60_K-Digital_Training_Project_6contour.jpg)
 
 - CHAIN_APPROX_NONE 설정 
   - RETR_EXTERNAL 과 RETR_TREE
 
-<img src="C:\Users\admin\Documents\GitHub\2SEHI.github.io\assets\images\60_K-Digital_Training_Project_7rect_contour.png" alt="60_K-Digital_Training_Project_7rect_contour" style="zoom:60%;" />
+<img src="\assets\images\60_K-Digital_Training_Project_7rect_contour.png" alt="60_K-Digital_Training_Project_7rect_contour" style="zoom:60%;" />
 
 
 

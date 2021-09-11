@@ -42,4 +42,4 @@ selectROI메소드를 이용해서 원하는 영역의 좌표를 받아도 되�
 
 
 
-![59_K-Digital_Training_Project_1](C:\Users\admin\Documents\GitHub\2SEHI.github.io\assets\images\59_K-Digital_Training_Project_1.png)
+![59_K-Digital_Training_Project_1](\assets\images\59_K-Digital_Training_Project_1.png)
