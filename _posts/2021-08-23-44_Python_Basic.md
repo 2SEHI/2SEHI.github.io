@@ -283,7 +283,7 @@ print(c(1), c(2), c(3))
 
 closure는 lambda와 자주 사용됩니다. 위에서 ```mul_add```함수를  lambda표현식으로 바꾸어 주면 됩니다.
 
-````
+````python
 def calc():
     a = 3
     b = 5
