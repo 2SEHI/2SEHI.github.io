@@ -58,7 +58,7 @@ driver = webdriver.Chrome('../data/chromedriver.exe')
 
 - 트위터의 로그인 페이지에 접속하여 id와 password입력창의 xpath를 취득합니다. input으로 되어있는 부분이 입력값을 설정해주는 input태그입니다.
 
-<img src="../assets/images/day3_1.png" alt="day3_1" style="zoom: 80%;" />
+<img src="../assets/images/7_twitter_crawling_1.png" alt="day3_1" style="zoom: 80%;" />
 
 - 아이디와 비밀번호를 입력받아 send_key로 로그인페이지의 입력창에 각각 넣어줍니다.
 - 그리고 login
@@ -79,7 +79,7 @@ driver.find_element_by_xpath('//*[@id="react-root"]/div/div/div[2]/main/div/div/
 ```
 
 아이디와 비밀번호를 입력하자 로그인에 성공하여 타임라인페이지로 이동했습니다! 
-<img src="../assets/images/day3_3.png" alt="day3_3" style="zoom: 80%;" />
+<img src="../assets/images/7_twitter_crawling_2.png" alt="day3_3" style="zoom: 80%;" />
 
 그런데 policy에 대한 팝업으로 인해 바로 다른 입력이나 버튼을 누를 수 없는 상태이므로 팝업화면이 나타날 경우 OK 버튼을 누르도록 만들겠습니다.
 이때 주의할 점은 ```find_element_by_xpath```를 사용하면 만약 policy화면이 없을 경우 NoSuchElementException이 발생하게 됩니다.
@@ -87,7 +87,7 @@ driver.find_element_by_xpath('//*[@id="react-root"]/div/div/div[2]/main/div/div/
 저는 try except 구문을 사용하여 구현해보겠습니다. policy의 OK버튼이 존재하지 않는다는건 타임라인 페이지가 표시되고 있다는 의미이므로 exception에러를 무시하고 바로 검색처리를 진행하도록 합니다.
 <br>
 먼저, policy의 OK 버튼의 xpath를 확인하고 클릭하도록 해줍니다.
-<img src="../assets/images/day3_4.png" alt="day3_4" style="zoom: 80%;" />
+<img src="../assets/images/7_twitter_crawling_3.png" alt="day3_4" style="zoom: 80%;" />
 
 
 ```python
@@ -107,7 +107,7 @@ except NoSuchElementException :  #spelling error making this code not work as ex
 
 - 다음은 검색인데, URL에 검색키를 넘겨주어 검색하는 방식을 해보았지만 어째서인지 url은 문제가 없지만 url을 실행시키면 검색결과가 없다고 나와 검색입력창에 입력하여 검색하는 방식으로 구현했습니다.
 - Twitter는 버튼이 없고 ```Enter``` 키를 눌러야 하므로 selenium에서 제공하는 Keys를 이용하여 return을 해주도록 합니다. 그런데 개발자모드를 볼때 화면크기가 줄어들면서 xpath가 미묘하게 달라져 최대한 개발자모드영역을 줄여서 xpath를 취득했습니다. 어차피 크롤링할때는 화면이 줄어들 일이 없다고 생각되어 화면크기마다 xpath를 취득하도록 하는 작업은 추가하지 않았습니다.
-<img src="../assets/images/day3_5.png" alt="day3_5" style="zoom: 80%;" />
+<img src="../assets/images/7_twitter_crawling_4.png" alt="day3_5" style="zoom: 80%;" />
 
 
 ```python
@@ -131,7 +131,7 @@ search_input_elem.send_keys(Keys.RETURN);
 
 
 jupyter에서 올림픽이라고 검색 내용을 입력하자 올림픽에 대한 타임라인이 나옵니다!
-<img src="../assets/images/day3_8.png" alt="day3_8" style="zoom: 80%;" />
+<img src="../assets/images/7_twitter_crawling_5.png" alt="day3_8" style="zoom: 80%;" />
 
 이제 page_source를 이용하여 검색 결과 페이지에 대한 소스를 모두 가져옵니다.
 
