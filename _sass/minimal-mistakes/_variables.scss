@@ -214,11 +214,12 @@ $syntax-accent: hsl($syntax-hue, 100%, 66% );
 
 
 // General colors
+$syntax-background-color:      $syntax-bg;
 $syntax-text-color:            $syntax-fg;
 $syntax-cursor-color:          $syntax-accent;
 $syntax-selection-color:       lighten($syntax-background-color, 10%);
 $syntax-selection-flash-color: $syntax-accent;
-$syntax-background-color:      $syntax-bg;
+
 
 // Guide colors
 $syntax-wrap-guide-color:          $syntax-guide;
