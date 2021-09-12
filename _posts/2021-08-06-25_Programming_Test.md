@@ -15,15 +15,17 @@ categories:
 
 # 체육복
 - Programmers
-
 - Level1
-
 - Language : Python
+
+
 
 
 ## [💡문제 보러 가기](https://programmers.co.kr/learn/courses/30/lessons/42862)
 
-<br>
+
+
+
 
 ## Python 소스코드
 
@@ -67,7 +69,7 @@ sort를 할 경우와 sort하지 않았을 때 어떻게 되는지 보면 다음
 
 
 
-### 다른 사람의 풀이
+### ⭐다른 사람의 풀이
 
 ```python
 def solution(n, lost, reserve):

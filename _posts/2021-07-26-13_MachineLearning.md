@@ -15,7 +15,11 @@ categories:
   - Machine Learning
 ---
 
+
+
 # 수치형 데이터 처리
+
+
 
 ## 1. 수치형 데이터의 단위 환산
 
@@ -25,6 +29,8 @@ categories:
 - 따라서 각 단위가 국내에 맞게 어떤 계산식으로 변환해야 하는지 검색해봐야 합니다.
 
 - 자동차 연비 mpg dataset을 이용하여 단위환산하는 방법을 알아보겠습니다.
+
+
 
 ### mpg데이터 읽어오기
 
@@ -55,7 +61,9 @@ mpg.info()
     memory usage: 28.1+ KB
 
 
+
 ### 컬럼 이름 부여
+
 - 각 컬럼명이 숫자이므로 컬럼명을 부여하겠습니다.
 
 
@@ -84,7 +92,9 @@ mpg.info()
     memory usage: 28.1+ KB
 
 
+
 ## mpg를 우리나라의 단위로 변환
+
 - MPG(Miles Per Gallon)란 차량의 연료 소비의 정도를 나타내는데 갤런 당 마일의 단위입니다.
 - 마일/갤런 의 단위를 킬로/리터로 환산을 해야하는데 그 계산법은 다음과 같습니다.
 
@@ -116,13 +126,15 @@ print(mpg.head())
     4       1                ford torino  7.227428  
 
 
-<br>
+
 
 **이런 식으로 온도(°C와 °F), 길이(inchi와 cm) 등과 같은 도량형 단위변환을 해주면 됩니다.**
 
 
 
 # 2. 스케일링(Scaling)
+
+
 
 ## 표준화(Standardization)
 
@@ -134,23 +146,27 @@ print(mpg.head())
 - 유지보수할 때 클라이언트쪽을 변화시키지 않기 위해서 사용하기도 합니다.
 
 
+
 ## 정규화(Normalization)
 
 - 한 특성 내에 가장 큰 값은 1로, 가장 작은 값은 0으로 변환하여 데이터 분포를 조정하는 방법입니다.
 - 수능 영어 점수를 90점 맞았고 토익 점수를 100점을 맞았다고 했을때 토익점수가 수능영어점수에 비해 더 높다고 할 수 있을까요? 당연히 만점(범위)의 기준이 다르므로 토익점수가 높다고 할 수 없습니다. 이를 0~1사이의 숫자로 일반화시키는 것을 정규화라고 합니다.
 - min과 max의 편차가 크거나, 다른 열에 비해 데이터가 지나치게 큰 열에 사용됩니다.
 
+
+
 ## 스케일러 종류
 
 - sklearn라이브러리에서는 다음과 같은 스케일러를 제공하고 있으므로 데이터에 따라 맞게 사용하면 됩니다.
 - 주성분 분석에서 많이 사용합니다.
 
-1. StandardScaler
-2. MinMaxScaler
-3. MaxAbsScaler
-4. RobustScaler
-5. Normalizer
-6. QuantileTransformer
+1. [StandardScaler](#1-standardscaler)
+2. [RobustScaler](#2-robustscaler)
+3. [MinMaxScaler](#3-minmaxscalerab)
+4. [MaxAbsScaler](#4-maxabsscaler)
+5. [Normalizer](#5-normalizer)
+6. [QuantileTransformer](#6-quantiletransformer)
+
 
 
 ## scikit-learn에서 정규화순서
@@ -158,6 +174,8 @@ print(mpg.head())
 1. Scaler객체생성
 2. fit메소드를 호출할 때 2차원ndarray을 매개변수로 넘겨준다
 3. transform 메소드를 실행하여 데이터를 변환해주는데 2차원ndarray을 매개변수로 넘겨준다
+
+
 
 ### 1. StandardScaler
 
@@ -186,19 +204,16 @@ income_scaled = scaler.transform(income)
 income_scaled
 ```
 
-
-
-
-    array([[-0.16135681],
-           [-0.37940656],
-           [-0.29218666],
-           [-0.6846762 ],
-           [-0.5102364 ],
-           [-0.07413691],
-           [ 0.27474268],
-           [-0.5974563 ],
-           [-0.46662645],
-           [ 2.89133962]])
+`array([[-0.16135681],
+       [-0.37940656],
+       [-0.29218666],
+       [-0.6846762 ],
+       [-0.5102364 ],
+       [-0.07413691],
+       [ 0.27474268],
+       [-0.5974563 ],
+       [-0.46662645],
+       [ 2.89133962]])`
 
 
 
@@ -248,19 +263,16 @@ income_scaled = scaler.transform(income)
 income_scaled
 ```
 
-
-
-
-    array([[ 0.43243243],
-           [-0.10810811],
-           [ 0.10810811],
-           [-0.86486486],
-           [-0.43243243],
-           [ 0.64864865],
-           [ 1.51351351],
-           [-0.64864865],
-           [-0.32432432],
-           [ 8.        ]])
+`array([[ 0.43243243],
+       [-0.10810811],
+       [ 0.10810811],
+       [-0.86486486],
+       [-0.43243243],
+       [ 0.64864865],
+       [ 1.51351351],
+       [-0.64864865],
+       [-0.32432432],
+       [ 8.        ]])`
 
 
 
@@ -288,19 +300,16 @@ income_scaled = scaler.transform(income)
 income_scaled
 ```
 
-
-
-
-    array([[2.14634146],
-           [2.08536585],
-           [2.1097561 ],
-           [2.        ],
-           [2.04878049],
-           [2.17073171],
-           [2.26829268],
-           [2.02439024],
-           [2.06097561],
-           [3.        ]])
+`array([[2.14634146],
+       [2.08536585],
+       [2.1097561 ],
+       [2.        ],
+       [2.04878049],
+       [2.17073171],
+       [2.26829268],
+       [2.02439024],
+       [2.06097561],
+       [3.        ]])`
 
 
 
@@ -327,10 +336,7 @@ income_scaled = scaler.transform(income)
 income_scaled
 ```
 
-
-
-
-    array([[0.3 ],       [0.25],       [0.27],       [0.18],       [0.22],       [0.32],       [0.4 ],       [0.2 ],       [0.23],       [1.  ]])
+`array([[0.3 ],       [0.25],       [0.27],       [0.18],       [0.22],       [0.32],       [0.4 ],       [0.2 ],       [0.23],       [1.  ]])`
 
 
 
@@ -343,13 +349,16 @@ income_scaled
 
 
 ```python
-from sklearn import preprocessingarr = [3000000, 2500000, 2700000, 1800000, 2200000,      3200000, 4000000, 2000000, 2300000, 10000000]income = np.array(arr).reshape(10,1)# 1. 표준편차 객체를 생성scaler = preprocessing.Normalizer()# 2. fit : 머신러닝은 Series나 DataFrame을 사용할 수 없고 numpy의 ndarray만 사용가능scaler.fit(income)# 3. transform : numpy의 ndarray만 사용가능income_scaled = scaler.transform(income)income_scaled
+from sklearn import preprocessing
+arr = [3000000, 2500000, 2700000, 1800000, 2200000,      3200000, 4000000, 2000000, 2300000, 10000000]
+income = np.array(arr).reshape(10,1)# 1. 표준편차 객체를 생성
+scaler = preprocessing.Normalizer()# 2. fit : 머신러닝은 Series나 DataFrame을 사용할 수 없고 numpy의 ndarray만 사용가능
+scaler.fit(income)# 3. transform : numpy의 ndarray만 사용가능
+income_scaled = scaler.transform(income)
+income_scaled
 ```
 
-
-
-
-    array([[1.],       [1.],       [1.],       [1.],       [1.],       [1.],       [1.],       [1.],       [1.],       [1.]])
+`array([[1.],       [1.],       [1.],       [1.],       [1.],       [1.],       [1.],       [1.],       [1.],       [1.]])`
 
 
 
@@ -359,11 +368,16 @@ from sklearn import preprocessingarr = [3000000, 2500000, 2700000, 1800000, 2200
 
 
 ```python
-from sklearn import preprocessingarr = [3000000, 2500000, 2700000, 1800000, 2200000,      3200000, 4000000, 2000000, 2300000, 10000000]income = np.array(arr).reshape(10,1)# 1. 표준편차 객체를 생성scaler = preprocessing.QuantileTransformer()# 2. fit : 머신러닝은 Series나 DataFrame을 사용할 수 없고 numpy의 ndarray만 사용가능scaler.fit(income)# 3. transform : numpy의 ndarray만 사용가능income_scaled = scaler.transform(income)income_scaled
+from sklearn import preprocessing
+arr = [3000000, 2500000, 2700000, 1800000, 2200000,      3200000, 4000000, 2000000, 2300000, 10000000]
+income = np.array(arr).reshape(10,1)# 1. 표준편차 객체를 생성
+scaler = preprocessing.QuantileTransformer()# 2. fit : 머신러닝은 Series나 DataFrame을 사용할 수 없고 numpy의 ndarray만 사용가능
+scaler.fit(income)# 3. transform : numpy의 ndarray만 사용가능
+income_scaled = scaler.transform(income)
+income_scaled
 ```
 
+`array([[0.66666667],       [0.44444444],       [0.55555556],       [0.        ],       [0.22222222],       [0.77777778],       [0.88888889],       [0.11111111],       [0.33333333],       [1.        ]])`
 
 
-
-    array([[0.66666667],       [0.44444444],       [0.55555556],       [0.        ],       [0.22222222],       [0.77777778],       [0.88888889],       [0.11111111],       [0.33333333],       [1.        ]])
 

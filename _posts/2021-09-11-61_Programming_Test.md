@@ -16,11 +16,7 @@ categories:
 
 - LeetCode
 
-
-
 - Level2
-
-
 
 - Language : Python
 
@@ -31,14 +27,16 @@ categories:
 
 
 
+## 풀이 과정
+
 
 ![image-20210911165807686](\assets\images\61_Programming_Test.jpg)
 
 
 
-## Python 소스코드
+## 전체 소스
 
-[622DesignCircularQueue.py](https://github.com/2SEHI/Python-Programming-Test/tree/main/python-algorithm-interview/622DesignCircularQueue.py)
+[622_DesignCircularQueue.py](https://github.com/2SEHI/Python-Programming-Test/blob/main/python-algorithm-interview/622_DesignCircularQueue.py)
 
 
 

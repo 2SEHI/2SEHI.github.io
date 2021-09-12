@@ -15,11 +15,17 @@ comments: true
 - 오늘은 Twitter API없이 Twitter를 crawling하여 로그인하고, 검색결과 페이지의 내용을 가져오는 작업까지 해보겠습니다.
 - [Twitter개발자 사이트](https://developer.twitter.com/en)에서 개발자 신청을 하면 편리하게 타임라인을 가져올 수 있지만 API 요청 한도 제한과 crawling 제한 등의 제약이 있어 Twitter API없이 selenium을 이용한 크롤링을 해보고자 합니다.
 
+
+
 ## 1. selenium 설치
+
 - selenium 패키지를 다운받아줍니다.
 ```pip install selenium```
 
+
+
 ## 2. chrome driver 취득
+
 - 브라우저를 제어해야 하므로 chrome의 driver의 위치를 지정하여 webdriver의 객체를 생성합니다. chrome설치가 안되어있을 경우 [chrome 다운로드 바로가기](https://www.google.com/chrome/?brand=BNSD&gclid=Cj0KCQjw9O6HBhCrARIsADx5qCQU0B82CukG5PC4xjtywaRogdKcjCBK02Um4gh_8EkpKijGVwHcAXkaAgOlEALw_wcB&gclsrc=aw.ds)를 클릭하여 chrome을 설치하고 와야합니다.
 
 - chrome의 driver의 위치
@@ -46,11 +52,13 @@ driver = webdriver.Chrome('../data/chromedriver.exe')
 # driver = webdriver.Chrome('chromedriver',options=option)
 ```
 
+
+
 ## 3. 로그인
+
 - 트위터의 로그인 페이지에 접속하여 id와 password입력창의 xpath를 취득합니다. input으로 되어있는 부분이 입력값을 설정해주는 input태그입니다.
 
 <img src="../assets/images/day3_1.png" alt="day3_1" style="zoom: 80%;" />
-<br>   
 
 - 아이디와 비밀번호를 입력받아 send_key로 로그인페이지의 입력창에 각각 넣어줍니다.
 - 그리고 login
@@ -93,7 +101,10 @@ except NoSuchElementException :  #spelling error making this code not work as ex
     pass
 ```
 
+
+
 ## 4. 검색
+
 - 다음은 검색인데, URL에 검색키를 넘겨주어 검색하는 방식을 해보았지만 어째서인지 url은 문제가 없지만 url을 실행시키면 검색결과가 없다고 나와 검색입력창에 입력하여 검색하는 방식으로 구현했습니다.
 - Twitter는 버튼이 없고 ```Enter``` 키를 눌러야 하므로 selenium에서 제공하는 Keys를 이용하여 return을 해주도록 합니다. 그런데 개발자모드를 볼때 화면크기가 줄어들면서 xpath가 미묘하게 달라져 최대한 개발자모드영역을 줄여서 xpath를 취득했습니다. 어차피 크롤링할때는 화면이 줄어들 일이 없다고 생각되어 화면크기마다 xpath를 취득하도록 하는 작업은 추가하지 않았습니다.
 <img src="../assets/images/day3_5.png" alt="day3_5" style="zoom: 80%;" />

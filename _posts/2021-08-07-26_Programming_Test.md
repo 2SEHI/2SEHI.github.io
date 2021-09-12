@@ -50,19 +50,23 @@ def solution(price, money, count):
     return max(0,price*(count+1)*count//2-money)
 ```
 
-####  내가 몰랐던 부분
 
-1. 1씩 증가하는 등차수열의 합 공식이용(너무 오랜만...)
 
-   - 이 방법을 사용하면 배열을 만들 필요가 없습니다
+###  ⭐내가 몰랐던 부분
 
-   $(price \times 1) + (price \times 2) + ... + (price \times (count -1 )) + (price \times count) $
+#### 1씩 증가하는 등차수열의 합 공식이용
 
-   = $price * (1 + 2 + ... + (count-1) + count)$
+- 이 방법을 사용하면 배열을 만들 필요가 없습니다
 
-   = $price \times  \frac{ (count + 1) \times  count}{2}$
+$(price \times 1) + (price \times 2) + ... + (price \times (count -1 )) + (price \times count) $
 
-2. max()두개 이상의 인자를 지정하면 두개의 인자중에서 큰 값으로 반환합니다.
+= $price * (1 + 2 + ... + (count-1) + count)$
+
+= $price \times  \frac{ (count + 1) \times  count}{2}$
+
+
+
+#### `max()`에 두개 이상의 인자를 지정하면 두개의 인자 중에서 큰 값으로 반환합니다.
 
 
 

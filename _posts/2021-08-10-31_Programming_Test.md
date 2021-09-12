@@ -13,7 +13,7 @@ categories:
 
 ---
 
-<br>
+
 
 # 상호 평가
 
@@ -29,7 +29,7 @@ categories:
 
 ## [💡문제 보러 가기](https://programmers.co.kr/learn/courses/30/lessons/83201)
 
-<br>
+
 
 ## Python 소스코드
 
@@ -119,7 +119,7 @@ def solution(scores):
 
 
 
-#### 내가 몰랐던 부분
+### ⭐내가 몰랐던 부분
 
 - map함수``` map(변환 함수, 순회 가능한 데이터)```와 같이 설정해주면 두번째 인자로 넘어온 데이터가 담고 있는 모든 데이터에 변환 함수를 적용하여 다른 형태의 데이터를 반환합니다. pandas나 numpy뿐만 아니라 list에도 적용가능하다는 사실을 몰랐고 아직 map의 함수 적용방법이 익숙하지 않습니다.
 - 또한 중복되는 조건문에 대해  ```if (max(s) == s[i] or min(s) == s[i]) and Counter(s)[s[i]] == 1:```와 같이 한줄에 쓸 수 있다는 것도 아주 유용하다고 생각합니다.

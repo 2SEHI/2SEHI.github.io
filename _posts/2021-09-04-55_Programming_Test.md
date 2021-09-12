@@ -76,17 +76,17 @@ def solution(word):
 
 
 
-#### 내가 몰랐던 부분
+### ⭐내가 몰랐던 부분
 
 - bisect : 이분탐색
 
   - 이분탐색은 최상단 노드부터 탐색하는데, 현재 노드 값과 비교해서 작으면 왼쪽노드를 탐색하고 크면 오른쪽 노드를 탐색하는 알고리즘입니다.
   - list.index는 모든 리스트를 탐색하여 index를 반환하지만 list는 현재 정렬되어 있으므로 이미 정렬된 리스트를 bisect 함수로 찾으면 list.index 보다 빠르게 찾을 수 있습니다. 
 
-  ```
-  bisect_left(literable, value) : 왼쪽 인덱스를 구하기
+  `bisect_left(literable, value) : 왼쪽 인덱스를 구하기`
   
-  bisect_right(literable, value) : 오른쪽 인덱스를 구하기
-  ```
+  `bisect_right(literable, value) : 오른쪽 인덱스를 구하기`
+  
+  
 
-  출처: https://programming119.tistory.com/196 [개발자 아저씨들 힘을모아]
+  출처:[https://programming119.tistory.com/196](https://programming119.tistory.com/196) [개발자 아저씨들 힘을모아]

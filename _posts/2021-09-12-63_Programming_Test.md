@@ -206,6 +206,6 @@ heap배열에서 가장작은 요소인 `(2, 2, c1)`를 추출하여 `result.nex
 
 
 
-### 전체 소스
+## 전체 소스
 
 [23_MergeKSortedLists.py](https://github.com/2SEHI/Python-Programming-Test/tree/main/python-algorithm-interview/23_MergeKSortedLists.py)

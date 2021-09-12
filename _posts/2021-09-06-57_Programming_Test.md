@@ -13,7 +13,23 @@ categories:
 
 
 
-## LinkedList 생성
+# LinkedList를 이용한 패린드롬 확인
+
+- 파이썬 알고리즘 인터뷰
+- level1
+
+- Language : Python
+
+
+
+
+## [💡문제 보러 가기](https://leetcode.com/problems/palindrome-linked-list/)
+
+
+
+
+
+## LinkedList 구현
 
 ```python
 class ListNode(object):

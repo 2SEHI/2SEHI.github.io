@@ -20,7 +20,10 @@ categories:
 
 ### 1.분산이 0인 컬럼제거
 
-   - <div style="text-align:center"><img src="..\assets\images\38_K-Digital_Training_Project.png" alt="38_K-Digital_Training_Project" style="zoom:100%;" /></div>
+
+
+<div style="text-align:center"><img src="\assets\images\38_K-Digital_Training_Project.png" alt="38_K-Digital_Training_Project" style="zoom:100%;" /></div>
+
    - VarianceThreshold(threshold)는 분산을 구하고 threshold에 설정한 임계치에 수렴하는 컬럼을 제거해줍니다.
    - get_support함수로 남겨지는 컬럼 index를 반환해주는데 이를 이용하여 남겨지는 컬럼명과 삭제할 컬럼명을 출력할 수도 있습니다.
 

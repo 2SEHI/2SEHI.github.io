@@ -24,9 +24,9 @@ categories:
 
 ## [💡문제 보러 가기](https://programmers.co.kr/learn/courses/30/lessons/76501#)
 
-<br>
 
-## Python 소스코드
+
+### Python 소스코드
 
 ```python
 def solution(absolutes, signs):
@@ -37,11 +37,14 @@ def solution(absolutes, signs):
 
 ### 다른 사람의 풀이
 
-```
+```python
 def solution(absolutes, signs):
     return sum(absolutes if sign else -absolutes for absolutes, sign in zip(absolutes, signs))
 ```
 
-#### 내가 몰랐던 부분
 
-- 같은 길이의 list는 zip을 이용하여 같은 인덱스끼리 잘라 for문으로 원소를 순환할 수 있습니다. zip을 사용하면 i 인덱스로 각 리스트의 인덱스 i를 지정하지 않아도 됩니다.
+
+### ⭐내가 몰랐던 부분
+
+- 같은 길이의 list는 zip을 이용하여 같은 인덱스끼리 잘라 for문으로 원소를 순환할 수 있습니다.
+  zip을 사용하면 i 인덱스로 각 리스트의 인덱스 i를 지정하지 않아도 됩니다.

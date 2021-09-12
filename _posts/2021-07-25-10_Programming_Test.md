@@ -14,7 +14,7 @@ categories:
 
 
 
-## 로또의 최고 순위와 최저 순위
+# 로또의 최고 순위와 최저 순위
 
 - Programmers
 
@@ -31,6 +31,8 @@ categories:
 *내 나름의  ~~비루한~~ 알고리즘 풀이...*
 
 ![10_lotto_lanking](\assets\images\10_lotto_lanking.png)
+
+
 
 ## Python 소스코드
 
@@ -76,9 +78,12 @@ def rank(count):
 
 
 
-0의 개수를 구하는것과 lottos와 win_nums의 일치하는 숫자의 개수를 구하는 것은 잘 짰는데 ranking을 구하는데서 불필요한 if elif가 많이 들어갔습니다. 다른 사람들의 풀이를 보고나니 더욱더 코딩테스트연습을 열심히 해야겠다는 생각이 들었습니다. 
+0의 개수를 구하는것과 lottos와 win_nums의 일치하는 숫자의 개수를 구하는 것은 잘 짰는데 ranking을 구하는데서 불필요한 `if elif`가 많이 들어갔습니다. 다른 사람들의 풀이를 보고나니 더욱더 코딩테스트연습을 열심히 해야겠다는 생각이 들었습니다. 
+
+
 
 ### 다른사람의 풀이
+
 ranking을 구할 때 if elif 말고도 ranking을 배열로 만들어 zero의 개수와 일치하는 숫자의 개수를 index로 활용할 수도 있습니다.
 ```python
 def solution(lottos, win_nums):

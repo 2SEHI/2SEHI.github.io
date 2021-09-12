@@ -402,4 +402,4 @@ print(next(it, 10))
 
 [🔻문제 보러가기](https://dojang.io/mod/quiz/view.php?id=2411)
 
-[🔻나의 풀이](https://github.com/2SEHI/Python-Programming-Test/blob/main/python-coding-dojang/unit49_pracice_iterator.py)
+[🔻나의 풀이](https://github.com/2SEHI/Python-Programming-Test/blob/main/python-coding-dojang/unit39-7_iterator.py)
