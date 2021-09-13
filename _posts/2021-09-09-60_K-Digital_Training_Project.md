@@ -75,7 +75,7 @@ Global Threshold는이미지 전체에 임계가 적용되어 버려지는 영�
 
 ### Morph Gradient
 
-테두리(외곽선)를 더 정확하게 추출하는 과정 - dilate 또는 erode
+테두리(외곽선)를 더 정확하게 추출하는 과정 - dilate(팽창) 또는 erode(침식)
 
 - dilate 와 erode
 
@@ -95,18 +95,19 @@ Global Threshold는이미지 전체에 임계가 적용되어 버려지는 영�
 
 ### Long Line Remove - HoughLinesP이용
 
-불필요한 세로선을 제거
+- 불필요한 세로선을 제거
 
 ![60_K-Digital_Training_Project_5HoughLinesP](\assets\images\60_K-Digital_Training_Project_5HoughLinesP.jpg)
 
 ### contouring - findContours메소드
 
-- CHAIN_APPROX_SIMPLE 설정의 경우
+- CHAIN_APPROX_SIMPLE 설정 : contour근사화
 
 ![60_K-Digital_Training_Project_6contour](\assets\images\60_K-Digital_Training_Project_6contour.jpg)
 
-- CHAIN_APPROX_NONE 설정 
-  - RETR_EXTERNAL 과 RETR_TREE
+- CHAIN_APPROX_NONE 설정 : contour를 구성하는 모든 점을 저장
+  - RETR_EXTERNAL : 외곽 윤곽선만 검출하며, 계층 구조를 구성하지 않습니다
+  - RETR_TREE : 모든 윤곽선을 검출하며, 계층 구조를 모두 형성합니다. 
 
 <img src="\assets\images\60_K-Digital_Training_Project_7rect_contour.png" alt="60_K-Digital_Training_Project_7rect_contour" style="zoom:60%;" />
 
@@ -114,7 +115,7 @@ Global Threshold는이미지 전체에 임계가 적용되어 버려지는 영�
 
 
 
-### 모델 학습
+### 모델 학습 - 아직 미실행
 
  Contour 영역을 추출하여 Morph Gradient가 적용된 이미지를 사용하며 학습과 질의를 할 때는 윤곽선이 정확(정밀)해야 하기 때문에 테두리가 뭉그러지지 않게 임계와 Morph Close를 적용하지 않는다.
 
@@ -122,10 +123,15 @@ Global Threshold는이미지 전체에 임계가 적용되어 버려지는 영�
 
 
 
+
+
+
+
 ## 결론
 
 소스코드 : [ROIExtraction.py](https://github.com/2SEHI/OCR-Text-Detection/tree/main/preprocessing/ROIExtraction.py)
 
+어느정도 주요객체에 맞는 contouring box가 그려졌는데 이제 이것을 모든 이미지에 대해 적용할 수 있도록 임계치를 찾아야 합니다. 
 
-임계치를 여러방면으로 바꾸어 보았지만 이 방법으로 입력되는 사진의 크기가 달라지면 임계치도 그에 따라 달라져 문자영역만 뭉치는게 힘든 것 같아서 ROI를 추출하는 다른 방식을 알아봐야겠습니다.
+그런 다음에 모델학습을 해보거나, selective search 또는 cascadeClassifier에 대해서도 알아보도록 할 것입니다.
 
