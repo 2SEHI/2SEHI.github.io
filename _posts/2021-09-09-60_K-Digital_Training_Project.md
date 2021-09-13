@@ -134,4 +134,3 @@ Global Threshold는이미지 전체에 임계가 적용되어 버려지는 영�
 어느정도 주요객체에 맞는 contouring box가 그려졌는데 이제 이것을 모든 이미지에 대해 적용할 수 있도록 임계치를 찾아야 합니다. 
 
 그런 다음에 모델학습을 해보거나, selective search 또는 cascadeClassifier에 대해서도 알아보도록 할 것입니다.
-
