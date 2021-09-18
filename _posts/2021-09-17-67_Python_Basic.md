@@ -1,4 +1,4 @@
-```
+---
 title:  "[python] 문자열에서 구두점을 제거하는 방법"
 excerpt: ""
 
@@ -13,7 +13,7 @@ comments: true
 
 categories:
   - Python
-```
+---
 
 
 
