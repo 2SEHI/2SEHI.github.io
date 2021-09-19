@@ -1,5 +1,5 @@
 ---
-title:  "[Descriptive_Statistics] 기술통계량"
+title:  "[Descriptive Statistics] 기술통계학"
 excerpt: ""
 
  
@@ -8,10 +8,10 @@ last_modified_at: 2021-08-28
 use_math: true
 
 categories:
-  - Descriptive_Statistics
+  - Descriptive Statistics
 ---
 
-참고 사이트: [http://www.incodom.kr/%EA%B8%B0%EC%88%A0%ED%86%B5%EA%B3%84%ED%95%99#h_a73a285dd3eb66fe16f55f14870d82d2](http://www.incodom.kr/%EA%B8%B0%EC%88%A0%ED%86%B5%EA%B3%84%ED%95%99#h_a73a285dd3eb66fe16f55f14870d82d2)
+- [통계 기초 용어](../3_Descriptive_Statistics/)
 
 
 
