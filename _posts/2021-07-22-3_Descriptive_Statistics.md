@@ -1,20 +1,22 @@
 ---
-title:  "[Descriptive_Statistics] 통계용어 정리"
+title:  "[Descriptive Statistics] 통계기초용어 정리"
 excerpt: ""
 
-date: 2021-09-18
-last_modified_at: 2021-09-18
+date: 2021-07-22
+last_modified_at: 2021-09-19
 
 use_math: true
 comments: true
 
 categories:
-  - Descriptive_Statistics
+  - Descriptive Statistics
 ---
 
 
 
-# 통계용어
+
+
+# 통계기초용어
 
 
 
