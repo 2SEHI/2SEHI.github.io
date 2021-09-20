@@ -1,5 +1,5 @@
 ---
-title:  "[공정이상요인분석] 2021/7/27 기술통계량 및 요인분석"
+title:  "[디스플레이센서 이상요인 분석] 2021/7/27 기술통계량 및 요인분석"
 excerpt: "numpy, pandas, seaborn등을 활용한 문제 풀이"
 
 
@@ -11,6 +11,8 @@ comments: true
 
 categories:
   - K-Digital Project
+tags:
+  - 디스플레이센서 이상요인 분석
 ---
 
 

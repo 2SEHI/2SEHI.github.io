@@ -1,6 +1,6 @@
 ---
 
-title:  "[공정이상요인분석] 2021/8/5 멘토링 4회차 - PCA, 레이블 라벨링, Feature Importance"
+title:  "[디스플레이센서 이상요인 분석] 2021/8/5 멘토링 4회차 - PCA, 레이블 라벨링, Feature Importance"
 excerpt: "PCA, 레이블 라벨링, Importance Feature"
 
 date: 2021-08-05
@@ -11,6 +11,8 @@ comments: true
 
 categories:
   - K-Digital Project
+tags:
+  - 디스플레이센서 이상요인 분석
 ---
 
 ## 오늘 한 것

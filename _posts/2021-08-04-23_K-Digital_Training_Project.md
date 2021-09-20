@@ -1,6 +1,6 @@
 ---
 
-title:  "[공정이상요인분석] 2021/8/4 VIF계수 구하기"
+title:  "[디스플레이센서 이상요인 분석] 2021/8/4 VIF계수 구하기"
 excerpt: "VIF계수 30이하로 줄이기"
 
 date: 2021-08-04
@@ -8,6 +8,8 @@ last_modified_at: 2021-08-07
 
 categories:
   - K-Digital Project
+tags:
+  - 디스플레이센서 이상요인 분석
 ---
 
 ## 오늘 한 것

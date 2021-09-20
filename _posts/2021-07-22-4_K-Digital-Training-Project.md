@@ -1,5 +1,5 @@
 ---
-title:  "[공정이상요인분석] 2021/7/22 기업 프로젝트, python 문제 풀기, RNN수업 및 복습"
+title:  "[디스플레이센서 이상요인 분석] 2021/7/22 기업 프로젝트, python 문제 풀기, RNN수업 및 복습"
 excerpt: "나무플래닛의 프로젝트, python 과제, RNN수업"
 
  
@@ -11,7 +11,8 @@ comments: true
 
 categories:
   - K-Digital Project
-
+tags:
+  - 디스플레이센서 이상요인 분석
 ---
 
 # 오늘 한것

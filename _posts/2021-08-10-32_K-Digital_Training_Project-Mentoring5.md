@@ -1,5 +1,5 @@
 ---
-title:  "[공정이상요인분석] 2021/8/10 멘토링 5회차 - RandomForest"
+title:  "[디스플레이센서 이상요인 분석] 2021/8/10 멘토링 5회차 - RandomForest"
 excerpt: "분류모델 훈련 및 검증"
 
 date: 2021-08-10
@@ -10,6 +10,8 @@ comments: true
 
 categories:
   - K-Digital Project
+tags:
+  - 디스플레이센서 이상요인 분석
 ---
 
 

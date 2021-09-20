@@ -1,6 +1,6 @@
 ---
 
-title:  "[공정이상요인분석] 2021/8/17 Random Forest모델의 graphviz시각화"
+title:  "[디스플레이센서 이상요인 분석] 2021/8/17 Random Forest모델의 graphviz시각화"
 excerpt: "Random Forest모델의  graphviz시각화할 경우, samples과 value의 개수가 안맞는 이유에 대하여"
 
 date: 2021-08-17
@@ -11,6 +11,8 @@ comments: true
 
 categories:
   - K-Digital Project
+tags:
+  - 디스플레이센서 이상요인 분석
 ---
 
 ## Random Forest모델의 graphviz시각화할 경우,  samples과 value의 개수가 안맞는 이유에 대하여

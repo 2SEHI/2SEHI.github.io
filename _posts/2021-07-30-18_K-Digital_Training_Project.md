@@ -1,6 +1,6 @@
 ---
 
-title:  "[공정이상요인분석] 2021/7/30 README파일 작성, 파일 분리"
+title:  "[디스플레이센서 이상요인 분석] 2021/7/30 README파일 작성, 파일 분리"
 excerpt: "공통처리부분에 대해 파일분리, README파일 작성을 했습니다"
 
 toc: true
@@ -14,6 +14,8 @@ comments: true
 
 categories:
   - K-Digital Project
+tags:
+  - 디스플레이센서 이상요인 분석
 ---
 
 ## 오늘 한 것

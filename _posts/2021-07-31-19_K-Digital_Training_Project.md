@@ -1,6 +1,6 @@
 ---
 
-title:  "[공정이상요인분석] 2021/7/31 LEFT, RIGHT컬럼 구별 시도"
+title:  "[디스플레이센서 이상요인 분석] 2021/7/31 LEFT, RIGHT컬럼 구별 시도"
 excerpt: "공장 생산 라인이 LEFT, RIGHT로 나누어져 있어,  LEFT, RIGHT 라인에 나누어 분류모델링을 해보기 위해 컬럼명 구별을 시도하였습니다"
 
 toc: true
@@ -14,6 +14,8 @@ comments: true
 
 categories:
   - K-Digital Project
+tags:
+  - 디스플레이센서 이상요인 분석
 ---
 
 ## 오늘 한 것
