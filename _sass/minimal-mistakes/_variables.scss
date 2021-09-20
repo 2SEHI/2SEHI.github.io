@@ -151,7 +151,7 @@ $small: 600px !default;
 $medium: 768px !default;
 $medium-wide: 900px !default;
 $large: 1024px !default;
-$x-large: 1280px !default;
+$x-large: 100em !default;
 $max-width: $x-large !default;
 
 /*
@@ -190,7 +190,7 @@ $syntax-brightness:   18%;
 
 // Monochrome -----------------------------------
 $mono-1: hsl($syntax-hue, 14%, 71%); // default text
-$mono-2: hsl($syntax-hue,  9%, 55%);
+$mono-2: hsl($syntax-hue,  9%, 70%);
 $mono-3: hsl(59.4,75.8%,74.1%);
 
 // Colors -----------------------------------
