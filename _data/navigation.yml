@@ -6,6 +6,8 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "Resume"
+    url: /resume/
 docs:
   - title: "Python"
     url: "categories/python"

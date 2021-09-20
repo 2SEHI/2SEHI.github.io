@@ -245,6 +245,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+resume_archive:
+  type: liquid
+  path: /resume/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
