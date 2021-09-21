@@ -9,7 +9,8 @@ comments: true
 
 categories:
   - K-Digital Project
-
+tags:
+  - 전력계량기 OCR인식
 ---
 참고 사이트 : https://d2.naver.com/helloworld/8344782
 

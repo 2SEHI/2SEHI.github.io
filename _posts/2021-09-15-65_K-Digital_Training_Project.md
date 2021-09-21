@@ -9,7 +9,11 @@ comments: true
 
 categories:
   - K-Digital Project
+tags:
+  - 전력계량기 OCR인식
 ---
+
+
 
 
 
@@ -68,6 +72,6 @@ categories:
 
 #### - ocr 모델 훈련
 
-- https://github.com/Belval/TextRecognitionDataGenerator
-- https://github.com/parksunwoo/ocr_kor
+- [데이터셋 생성](https://github.com/Belval/TextRecognitionDataGenerator)
+- [한글 OCR모델](https://github.com/parksunwoo/ocr_kor)
 

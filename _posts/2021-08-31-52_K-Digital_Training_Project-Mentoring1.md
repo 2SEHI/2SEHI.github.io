@@ -9,6 +9,8 @@ comments: true
 
 categories:
   - K-Digital Project
+tags:
+  - 전력계량기 OCR인식
 ---
 
 

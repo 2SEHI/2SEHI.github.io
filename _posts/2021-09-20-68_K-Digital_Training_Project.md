@@ -13,6 +13,14 @@ tags:
   - 전력계량기 OCR인식
 ---
 
+
+
+OCR문자인식모델을 사용하기 전에 한글 이미지 데이터셋을 만들어야 하는데 아래 사이트를 참고하여 어떻게 만드는지에 대해 알아보았습니다.
+
+참고사이트 : [TextRecognitionDataGenerator](https://github.com/Belval/TextRecognitionDataGenerator)
+
+  
+
 # TextRecognitionDataGenerator
 
 _A synthetic data generator for text recognition_
