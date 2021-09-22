@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 
 date: 2021-09-17
-last_modified_at: 2021-09-21
+last_modified_at: 2021-09-22
 
 use_math: true
 comments: true
@@ -127,4 +127,68 @@ https://docs.python.org/3/library/collections.html#collections.deque
 - `popleft`() : 데크의 왼쪽에서 요소를 제거하고 반환합니다. 요소가 없으면, [`IndexError`](https://docs.python.org/ko/3/library/exceptions.html#IndexError)를 발생시킵니다.
 
 - `maxlen` : 데크의 최대 크기.설정하지 않으면 길이 변경됩니다.
+
+
+
+# 5. strip(chars)
+
+- 지정한 chars가 문자열 앞뒤에 존재할 경우 제거하여 반환해 줍니다.
+
+  `strip(chars)`
+
+
+
+## 1) 공백 제거
+
+````python
+sentence = '  a  '
+print(sentence.strip(' '))
+
+## 실행결과
+```
+a
+```
+````
+
+
+
+## 2) 문자 제거
+
+````python
+sentence = '  a..a..'
+print(sentence.strip('.'))
+
+## 실행결과
+```
+  a..a
+```
+````
+
+
+
+## 3) lstrip() 선행문자만 제거
+
+````python
+sentence = '..a..a..'
+print(sentence.lstrip('.'))
+
+## 실행결과
+```
+a..a..
+```
+````
+
+
+
+## 4) rstrip() 후행문자만 제거
+
+````python
+sentence = '..a..a..'
+print(sentence.rstrip('.'))
+
+## 실행결과
+```
+..a..a
+```
+````
 
