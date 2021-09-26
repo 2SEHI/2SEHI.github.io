@@ -11,14 +11,14 @@ comments: true
 categories:
   - K-Digital Project
 tags:
-  - 전력계량기 OCR인식
+  - 전력계량기 OCR인식메
 ---
 
 
 
-# 전기계량기 OCR 인식을 통한 전력량 도출
 
 
+# 멘토링 내용
 
 ## 계획서에 대한 피드백
 

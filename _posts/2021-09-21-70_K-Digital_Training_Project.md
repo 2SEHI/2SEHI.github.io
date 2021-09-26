@@ -61,7 +61,7 @@ SelectiveSearch는 **4가지 요소 Color (색상), Texture(텍스처), Size(크
 
 
 
-## Color Similarity
+## Color **Similarity**
 
 ## Texture Similarity
 
@@ -81,5 +81,5 @@ SelectiveSearch는 **4가지 요소 Color (색상), Texture(텍스처), Size(크
 
 이를 활용하여, 색상을 이용한 전력량부분의 유사도 측정, Type 문자영역의 유사도 측정에 활용해 볼 수 있을 것 같습니다.
 
-![image-20210923102412286](\assets\images\70_K-Digital_Training_Project)
+![image-20210923102412286](\assets\images\70_K-Digital_Training_Project.png)
 
