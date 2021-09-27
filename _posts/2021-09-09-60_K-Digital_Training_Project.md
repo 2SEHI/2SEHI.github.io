@@ -130,7 +130,7 @@ Global Threshold는이미지 전체에 임계가 적용되어 버려지는 영�
 
 ## 결론
 
-소스코드 : [ROIExtraction.py](https://github.com/2SEHI/OCR-Text-Detection/tree/main/preprocessing/ROIExtraction.py)
+소스코드 : [3_ROIExtraction.py](https://github.com/2SEHI/OCR-Text-Detection/tree/main/preprocessing/3_ROIExtraction.py)
 
 어느정도 주요객체에 맞는 contouring box가 그려졌는데 이제 이것을 모든 이미지에 대해 적용할 수 있도록 임계치를 찾아야 합니다. 
 
