@@ -250,7 +250,7 @@ for i in range(3):
 
 
 
-## 2) iterable 객체를 list로 만들기
+## 2) literable 객체를 list로 만들기
 
 튜플로 묶어주는 것을 list로 담을 수 있습니다.
 
@@ -330,4 +330,136 @@ print(unpack_list)
 ```
 
 
+
+# 8.divmod
+
+큰 숫자일 때는 a//b, a%b 보다 유리합니다
+
+
+
+# 8.max | min
+
+
+
+## 1) list에서 최대 최소 구하기
+
+iterable 객체를 인자값으로 설정하면 그 안에서 가장 큰 값 또는 작은 값을 반환합니다. list 이외에도 tuple로도 최대 최소값을 구할 수 있습니다.
+
+```python
+a = [1, 2, 3]
+print(min(a))
+
+## 출력 결과
+'''
+ 1
+'''
+```
+
+
+
+## 2) dictionary에서 최대 최소 구하기
+
+dictionary에서는 **key를 기준으로** 최대 최소를 구합니다.
+
+```python
+a = {8 : "b", 10 : "d", 7:"z"}
+print(min(a))
+
+## 출력 결과
+'''
+7
+'''
+```
+
+
+
+
+
+## 3) 같은 타입끼리만 비교 가능
+
+다른 타입을 비교하면 TypeError가 발생하여 같은 타입끼리만 비교 가능합니다.
+
+```python
+c = [1, 'a', 'y', 'z']
+
+print(max(c))
+
+## 출력 결과
+'''
+TypeError: '>' not supported between instances of 'str' and 'int'
+'''
+```
+
+
+
+## 4) min(iterable, key)
+
+두번째 인자값에 key를 전달할 수 있는데 이는 iterable의 객체를 비교하는 기준이 됩니다. 함수 또는 lambda 표현식으로 전달할 수 있습니다.
+
+key 인자값을 설정하지 않았을 때는 dictionary의 key로만 비교해서 7 이 나왔었는데 key인자에 dictionary의 key에 대한 value를 반환하도록 lambda를 설정하고 나니 value가 가장 작은 값이 출력되었습니다.
+
+```python
+a = {8 : "b", 10 : "d", 7:"z"}
+
+key = min(a, key = lambda k: a[k])
+print(key)
+
+## 출력 결과
+'''
+8
+'''
+```
+
+
+
+key 인자를 이용한 다른 활용으로는 리스트 의 문자 요소를 하나씩 꺼내 문자의 길이를 비교할 수도 있습니다.
+
+```python
+city = ['seoul', 'Busan', 'Incheon', 'Sejong']
+
+longest = max(city, key= lambda n: len(n))
+print(longest)
+
+## 출력 결과
+'''
+Incheon
+'''
+```
+
+
+
+
+
+## 5) min(iterable, iterable)
+
+두 개 이상의 iterable에 대하여 
+
+- 숫자의 경우
+
+```python
+b = [10, 9] 
+c = [10, 3, 2, 1]
+print(max(b,c))
+
+# 출력
+'''
+[10, 9]
+'''
+```
+
+- 문자열의 경우
+
+문자열의 경우 문자열의 ASCII 값을 비교하여 가장 낮은 값이 최소 값이 됩니다. `a`가 가장 낮기 때문에 `apple`이 최소 값으로 리턴되었습니다.
+
+```python
+b = ['y', 'z'] 
+c = ['a', 'z']
+print(max(b,c))
+```
+
+
+
+# 추가예정
+
+eval : 가독성이 떨어지고 input 사용하면 PC의 루트가 공개될 수 있으므로 되도록 쓰지 않는 것이 좋습니다.
 
