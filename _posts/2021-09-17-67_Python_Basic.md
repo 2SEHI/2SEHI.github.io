@@ -331,10 +331,6 @@ print(unpack_list)
 
 
 
-# 8.divmod
-
-큰 숫자일 때는 a//b, a%b 보다 유리합니다
-
 
 
 # 8.max | min
@@ -459,7 +455,62 @@ print(max(b,c))
 
 
 
+# 9.sum
+
+## 1) sum(iterable)
+
+iterable 객체 내 각 요소의 합을 구해주는 함수입니다. 이때 iterable 객체는 숫자 인덱스로 접근이 가능한 list나 튜플이어야 합니다. (dictionary의 key 가 숫자인 경우엔 key 값을 모두 더할 수 있습니다.)
+
+```python
+num_list = [1 ,2, 3, 4, 5]
+print(sum(num_list))
+
+num_tuple = (1 ,2, 3, 4, 5)
+print(sum(num_tuple))
+
+num_dict = {2:"a" ,22:"g", 4:"qp", 10: "2"}
+print(sum(num_dict))
+
+## 출력결과
+'''
+15
+15
+38
+'''
+```
+
+
+
+## 2) sum(iterable, start)
+iterable의 합산 결과에 start에 지정한 값을 합하여 반환합니다.
+
+```python
+num_list = [1 ,2, 3, 4, 5]
+print(sum(num_list, 100))
+
+num_tuple = (1 ,2, 3, 4, 5)
+print(sum(num_tuple, 200))
+
+num_dict = {2:"a" ,22:"g", 4:"qp", 10: "2"}
+print(sum(num_dict, 300))
+
+## 출력 결과
+'''
+115
+215
+338
+'''
+```
+
+
+
 # 추가예정
+
+# 8.divmod
+
+큰 숫자일 때는 a//b, a%b 보다 유리합니다
+
+
 
 eval : 가독성이 떨어지고 input 사용하면 PC의 루트가 공개될 수 있으므로 되도록 쓰지 않는 것이 좋습니다.
 
