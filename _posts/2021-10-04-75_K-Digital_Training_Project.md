@@ -1,3 +1,18 @@
+---
+title: "[전력계량기OCR인식] 2021/10/4 RNN 모델 기록"
+
+date: 2021-10-4
+last_modified_at: 2021-10-4
+
+use_math: true
+comments: true
+
+categories:
+  - K-Digital Project
+tags:
+  - 전력계량기 OCR인식
+
+---
 # R-CNN
 
 
