@@ -331,10 +331,6 @@ print(unpack_list)
 
 
 
-# 8.divmod
-
-큰 숫자일 때는 a//b, a%b 보다 유리합니다
-
 
 
 # 8.max | min
@@ -459,7 +455,119 @@ print(max(b,c))
 
 
 
+# 9.sum
+
+## 1) sum(iterable)
+
+iterable 객체 내 각 요소의 합을 구해주는 함수입니다. 이때 iterable 객체는 숫자 인덱스로 접근이 가능한 list나 튜플이어야 합니다. (dictionary의 key 가 숫자인 경우엔 key 값을 모두 더할 수 있습니다.)
+
+```python
+num_list = [1 ,2, 3, 4, 5]
+print(sum(num_list))
+
+num_tuple = (1 ,2, 3, 4, 5)
+print(sum(num_tuple))
+
+num_dict = {2:"a" ,22:"g", 4:"qp", 10: "2"}
+print(sum(num_dict))
+
+## 출력결과
+'''
+15
+15
+38
+'''
+```
+
+
+
+## 2) sum(iterable, start)
+iterable의 합산 결과에 start에 지정한 값을 합하여 반환합니다.
+
+```python
+num_list = [1 ,2, 3, 4, 5]
+print(sum(num_list, 100))
+
+num_tuple = (1 ,2, 3, 4, 5)
+print(sum(num_tuple, 200))
+
+num_dict = {2:"a" ,22:"g", 4:"qp", 10: "2"}
+print(sum(num_dict, 300))
+
+## 출력 결과
+'''
+115
+215
+338
+'''
+```
+
+
+
+# 10.int
+
+## 1) int(str)
+
+- int함수는 문자열 str을 정수로 반환해줍니다.
+- 만약에 인자값을 설정하지 않으면 0을 반환합니다.
+
+
+
+## 2) int(str, base)
+
+- int함수에 두번째 인자를 설정하면, 첫번째 인자는 문자열, bytes,  또는 bytearray 여야 합니다.
+- 첫번째 매개변수는 base진법의 숫자이며, 반환값은 첫번째 인자값을 10진수로 변환한 값입니다.
+-  base는 0 또는 2~36까지 설정이 가능합니다.
+
+```python
+int('11',2)
+
+# 출력결과
+''' 1*2 + 1*1
+3
+'''
+
+int('54',5)
+
+# 출력결과
+''' 2*5 + 4*1
+3
+'''
+```
+
+
+
+- 첫번째 인자값의 각 자리수는 base보다 크면 에러가 발생합니다.
+
+```python
+int('64',5)
+
+# 출력결과
+'''
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-80-f31e48cc1440> in <module>()
+      6 '''
+      7 
+----> 8 int('64',5)
+
+ValueError: invalid literal for int() with base 5: '64'
+'''
+```
+
+
+
+### [활용문제](./2021-10-08-76_Programming_Test.md)
+
+
+
 # 추가예정
+
+# 8.divmod
+
+큰 숫자일 때는 a//b, a%b 보다 유리합니다
+
+
 
 eval : 가독성이 떨어지고 input 사용하면 PC의 루트가 공개될 수 있으므로 되도록 쓰지 않는 것이 좋습니다.
 
