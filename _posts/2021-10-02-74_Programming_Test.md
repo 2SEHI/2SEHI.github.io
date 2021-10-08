@@ -128,3 +128,5 @@ def solution(board, moves):
 제가 사용하고 싶었던 filter를 이용하여 풀으셨는데 한줄에 map과 filter를 같이 써서 가독성이 좋은 것같지는 않습니다. 
 
 그리고 이 소스에서 zip을 사용한 방식이 이해가 가지 않아서 알아보았습니다.
+
+[unpacking에 대하여](\python\67_Python_Basic.md#7unpacking)
