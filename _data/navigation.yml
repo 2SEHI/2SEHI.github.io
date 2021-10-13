@@ -1,13 +1,13 @@
 # main links
 main:
-#  - title: "About"
-#    url: /about/
+  - title: "Resume"
+    url: /about/
   - title: "Category"
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "Resume"
-    url: /resume/
+#  - title: "Resume"
+#    url: /resume/
 docs:
   - title: "Python"
     url: "categories/python"
