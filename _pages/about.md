@@ -6,21 +6,46 @@ title: "반갑습니다! 제 이름은 이세희입니다"
 
 
 
-- 저는 도쿄에서 2016년 9월부터 2020년 10월까지 SI 시스템 개발자로 4년간 일했으며, AI에 흥미를 가지고 도전하고자 과감히 한국으로 돌아왔습니다.
+- 저는 도쿄에서 2016년 9월부터 2020년 10월까지 SI 시스템 개발자로 4년간 일했으며, 
 
-- 한국으로 돌아와 중앙정보처리학원에서 2021년 4월부터 2021년 10월까지  [빅데이터 기반 AI 응용 솔루션 개발자 전문과정]을 수료하였습니다.
+  AI에 흥미를 가지고 도전하고자 과감히 한국으로 돌아왔습니다.
 
-   [✒훈련과정에서 배운 내용 저장소](https://github.com/2SEHI/K-Digital_Lecture)
+- 한국으로 돌아와 중앙정보처리학원에서 2021년 4월부터 2021년 10월까지 
+
+   [빅데이터 기반 AI 응용 솔루션 개발자 전문과정]을 수료하였습니다. [📌훈련과정에서 배운 내용 저장소](https://github.com/2SEHI/K-Digital_Lecture)
 
 - 저는 기록과 분석을 좋아하며, 효율적인 판단력을 가지고 비즈니스 인사이트를 도출해내는 개발자가 되고 싶습니다.
 
+<br>
+
+# 🚩Skill Set
+
+## Language 
+- Python, Java
+## OS
+- Linux
+## Framework
+- Django, Flask, Spring, Struts, OpenCV 
+## Database
+- Oracle, MySQL, PostgreSQL
+## IDE
+- Eclipse, IntelliJ, STS, Pycharm, Colab, Android Studio, DBeaver, eXERD 
+## Data Analysis
+- Scikit-learn, Scipy, Tensorflow, Keras, Pytorch 
+## Front-End
+- JavaScript, HTML/CSS, JQuery
+## Version Control
+- Git, SVN
 
 
-# 🖱개인 참가 프로젝트
+
+<br>
+
+# 📍개인 참가 프로젝트
 
 중앙정보처리학원  K-Digital Traning  - [빅데이터 기반 AI 응용 솔루션 개발자 전문과정] 에서 진행한 프로젝트입니다.
 
-
+<br>
 
 ## [1. 💻디스플레이 센서의 불량품 요인 분석](https://github.com/2SEHI/DisplaySensor-Anomaly-Analysis)
 
@@ -30,7 +55,7 @@ title: "반갑습니다! 제 이름은 이세희입니다"
 
 
 
-
+<br>
 
 ## [2. ⚡전력량계량기 OCR 추출 ](https://github.com/yujapie/ElectricityOCRServer)
 
@@ -41,11 +66,13 @@ title: "반갑습니다! 제 이름은 이세희입니다"
 - 저는 팀에서 이미지 전처리, Android 의 조회, 상세화면 구현, Server 구축, README 작성, PPT작성을 맡았으며, 성공하지는 못했지만, 객체탐지를 위한 R-CNN 모델의 전이학습을 통한 훈련도 수행했습니다. 
 - 난이도가 높았던 작업 :   R-CNN 모델을 이용한 객체탐지에 성공하지 못한 이유는 입력 이미지에 대해  predict를 할 때 2000개의 Selective Search 이미지를 모두 저장하여 model 예측결과와 일일이 비교하여 한장의 이미지에서 객체를 추출하는데 약 20분이 넘게 소요되었기 때문입니다. 더 좋은 모델훈련방법이 없을까 여러 논문이나 글을 읽으며 탐지모델에 대해 공부해본 결과 제가 사용한 R-CNN의 경우는 Selective Search 이미지와 레이블을 이용하여 모델을 훈련하지만 Fast R-CNN의 경우에는 Selective Search 이미지가 아닌 좌표를 이용하여 모델을 훈련시켜서 Fast R-CNN에 대한 모델 훈련을 해보고 있습니다.
 
+<br>
+
 
 
 # 🔧경력
 
-
+<br>
 
 ## 💡NCB
 
@@ -53,7 +80,7 @@ title: "반갑습니다! 제 이름은 이세희입니다"
 
 - SI 개발
 
-
+<br>
 
 ### 현장1 - 비지니스 지원 시스템
 
@@ -77,7 +104,7 @@ title: "반갑습니다! 제 이름은 이세희입니다"
   - 예를들어, 기존 시스템에는 불필요한 소스와 주석이 많았고 처음 프로그래밍을 배울 때부터 mybatis를 이용하여 소스와 SQL를 분리하였기 때문에 SQL 하드코딩에 대한 단점을 느끼지 못했었는데 소스내에 SQL 하드코딩 을 보며 수정이 매우 힘들었습니다.
 - 가장 힘들었던 부분은 엄격한 보안때문에 외부 인터넷이 차단되어 있고 사무실 내에서 핸드폰을 볼 수 없어서 모르는 내용에 대해 사무실 밖에서 검색하고 종이에 적어와 해결해야 했습니다. 
 
-
+<br>
 
 ## 💡ISS
 
@@ -85,7 +112,7 @@ title: "반갑습니다! 제 이름은 이세희입니다"
 
 - 이전 회사 - NCB의 같은 계열사로 이직하여 프로젝트를 진행하면서 신입 채용과 JAVA 교육을 맡기도 했습니다.
 
-
+<br>
 
 ### 현장 - Docomo Systems
 
