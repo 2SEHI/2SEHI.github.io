@@ -20,22 +20,29 @@ title: "반갑습니다! 제 이름은 이세희입니다"
 
 # 🚩Skill Set
 
-## Language 
-- Python, Java
-## OS
-- Linux
-## Framework
-- Django, Flask, Spring, Struts, OpenCV 
-## Database
-- Oracle, MySQL, PostgreSQL
-## IDE
-- Eclipse, IntelliJ, STS, Pycharm, Colab, Android Studio, DBeaver, eXERD 
-## Data Analysis
-- Scikit-learn, Scipy, Tensorflow, Keras, Pytorch 
-## Front-End
-- JavaScript, HTML/CSS, JQuery
-## Version Control
-- Git, SVN
+- Language 
+  - Python, Java
+
+- OS
+  - Linux
+
+- Framework
+  - Django, Flask, Spring, Struts, OpenCV 
+
+- Database
+  - Oracle, MySQL, PostgreSQL
+
+- IDE
+  - Eclipse, IntelliJ, STS, Pycharm, Colab, Android Studio, DBeaver, eXERD 
+
+- Data Analysis
+  - Scikit-learn, Scipy, Tensorflow, Keras, Pytorch 
+
+- Front-End
+  - JavaScript, HTML/CSS, JQuery
+
+- Version Control
+  - Git, SVN
 
 
 
