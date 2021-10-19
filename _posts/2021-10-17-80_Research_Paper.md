@@ -39,7 +39,7 @@ categories:
 
 > Scene text detection has attracted much attention in the computer vision field because of its numerous applications, such as instant translation, image retrieval, scene parsing, geo-location, and blind-navigation. Recently, scene text detectors based on deep learning have shown promising performance [8, 40, 21, 4, 11, 10, 12, 13, 17, 24, 25, 32, 26]. These methods mainly train their networks to localize word level bounding boxes. However, they may suffer in difficult cases, such as texts that are curved, deformed, or extremely long, which are hard to detect with a single bounding box. Alternatively, character-level awareness has many advantages when handling challenging texts by linking the successive characters in a bottom-up manner. Unfortunately,Figure 1. Visualization of character-level detection using CRAFT. (a) Heatmaps predicted by our proposed framework. (b) Detection results for texts of various shape. most of the existing text datasets do not provide character level annotations, and the work needed to obtain character level ground truths is too costly. In this paper, we propose a novel text detector that localizes the individual character regions and links the detected characters to a text instance. Our framework, referred to as CRAFT for Character Region Awareness For Text detection, is designed with a convolutional neural network producing the character region score and affinity score. The region score is used to localize individual characters in the image, and the affinity score is used to group each character into a single instance. To compensate for the lack of character-level annotations, we propose a weakly supervised learning framework that estimates character-level ground truths in existing real word-level datasets. Figure. 1 is a visualization of CRAFT’s results on various shaped texts. By exploiting character-level region awareness, texts in various shapes are easily represented. We demonstrate extensive experiments on ICDAR datasets [15, 14, 28] to validate our method, and the experiments show that the proposed method outperforms state-of-the-art text detectors. Furthermore, experiments on MSRATD500, CTW-1500, and Total Text datasets [36, 38, 3] show the high flexibility of the proposed method on complicated cases, such as long, curved, and/or arbitrarily shaped texts.
 
-Scene text detection는 실시간 번역, 이미지 검색, 장면 구문 분석, 지리 위치 와 블라인드 네비게이션 같이 많은 애플리케이션으로 인해 컴퓨터 비전 영역에서 관심을 받았다. 최근에 딥러닝을 기반으로 한 Scene text detectors 는 유망한 퍼포먼스를 보여준다. 
+Scene text detection는 실시간 번역, 이미지 검색, 장면 구문 분석, 지리 위치 와 블라인드 네비게이션 같이 많은 애플리케이션으로 인해 컴퓨터 비전 영역에서 관심을 받았다. 최근 딥러닝을 기반으로 한 Scene text detectors 는 유망한 퍼포먼스를 보여준다. 
 
 - 언급 논문
   - Single shot text detector with regional attention 
@@ -56,9 +56,14 @@ Scene text detection는 실시간 번역, 이미지 검색, 장면 구문 분석
   - Detecting oriented text in natural images by linking segments.
   - Multi-oriented scene text detection via corner localization and region segmentation
 
+이러한 방법들은 주로 단어 단위의 바운딩 박스를 지역화하기 위해 네트워크를 훈련한다. 하지만 곡선, 변형되거나 매우 긴 텍스트같은 어려운 케이스는 하나의 바운딩 박스로 탐지하기 어렵다. 반면, 글자단위의 인식은 상향식에서의 연속적인 글자의 연결을 다루는데 많은 장점을 가진다. 
 
+그림1.CRAFT를 이용한 글자 단위 탐지의 시각화
 
+- (a) 우리가 제안한 프레임워크를 이용하여 예측한 히트맵 시각화
+- (b) 다양한 형태의 텍스트의 예측결과
 
+안타깝게도,  대부분의 텍스트 데이터셋은 글자 단위의 annotation을 제공하지 않으며, 글자 단위의 ground truths 를 얻기에 비용이 많이 든다. 본 논문에서는 독립된 글자 영역의 지역화와 예측된 글자와 텍스트 인스턴스를 연결한 새로운 글자 탐지기를 제안한다.
 
 
 
