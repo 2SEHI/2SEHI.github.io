@@ -22,7 +22,7 @@ categories:
 - 2차원 배열로 그래프의 연결 관계를 표현하는 방식
 
 - 모든 관계를 저장하므로 노드 개수가 많을수록 메모리 낭비가 심합니다
-- 노드의 연결 확인 속도는 빠릅니다.
+- 노드의 연결 확인 속도는 빠릅니다
 
 ```python
 INF = 999999999
@@ -228,6 +228,71 @@ bfs(graph, 1, visited)
 ### 1) 얼음 얼려 먹기
 
 - 이것이 코딩테스트다
+
+
+
+#### 풀이방법
+
+- 알고리즘
+
+  - 0 : 구멍이 뚫린 부분이고, 1 : 칸막이
+
+  - 모든 맵의 요소에 대해 확인
+
+  - 요소가 칸막이(1)일 경우는 넘어가고, 구멍(0)일 경우에는 상하좌우에 0으로 연결되어 있는지 확인
+
+
+
+- 재귀함수의 파라미터
+- return 값
+- 종료 조건
+
+
+
+
+
+#### python 코드 
+
+```python
+def dfs(x, y):
+    # 맵을 벗어나는 경우, False 반환
+    if x <= -1 or x >= n or y <= -1 or y >= m:
+        return False
+    # 아직 방문하지 않았을 경우
+    if graph[x][y] == 0:
+        # 방문으로 표시
+        graph[x][y] = 1
+        # 상하좌우를 확인
+        dfs(x-1, y)
+        dfs(x+1, y)
+        dfs(x, y-1)
+        dfs(x, y+1)
+        # True 를 반환
+        return True
+    # 방문한 경우, False 를 반환
+    return False
+
+
+if __name__ == '__main__':
+    # 맵의 크기를 입력받기
+    n, m = map(int, input().split())
+    
+    graph = []
+    # 맵의 행길이(n)만큼 열(m)의 값을 입력받기
+    for i in range(n):
+        graph.append(list(map(int, input().split())))
+
+    result = 0
+    # 전체 맵에 대해 상하좌우를 확인
+    for i in range(n):
+        for j in range(m):
+            # 구멍이 뚫린 부분은 True 를 반환하므로 
+            # 그 개수가 아이스크림의 개수가 됨
+            if dfs(i, j):
+                result += 1
+    print(result)
+
+```
 
 
 
